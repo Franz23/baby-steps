@@ -1,0 +1,21 @@
+/* Observed reporting, set as an understated paper advisory. */
+.lab-comparison .comparison-heading{position:absolute;top:67px;left:120px;margin:0;font:400 53px/1.15 Baskerville,Georgia,serif;letter-spacing:-.7px;color:#594737}
+.lab-comparison .comparison-subtitle{position:absolute;top:135px;left:122px;margin:0;font:italic 28px Baskerville,Georgia,serif;color:#89755e}
+.reporting-advisory{position:absolute;top:42px;right:120px;width:430px;border:2px solid #594737;padding:5px;text-align:center;transform:rotate(-1deg);color:#594737}
+.reporting-advisory strong{display:block;background:#594737;color:#f3ede0;font:700 20px/1.2 Georgia,serif;letter-spacing:2px;padding:6px 0}
+.reporting-advisory span{display:block;font:700 22px/1.2 Georgia,serif;letter-spacing:1.5px;padding:8px 0 4px}.reporting-advisory small{display:block;font:15px/1.3 Georgia,serif;letter-spacing:3px;padding-bottom:3px}
+.lab-comparison .ten-lab-table{position:absolute;top:205px;left:120px;width:1360px;border-collapse:collapse;table-layout:fixed;font:400 29px/1.12 Baskerville,Georgia,serif;color:#594737}
+.ten-lab-table .lab-col{width:16%}.ten-lab-table .count-col{width:24%}.ten-lab-table .rate-col{width:35%}.ten-lab-table .tier-col{width:25%}
+.lab-comparison .ten-lab-table th{height:59px;padding:0 28px 13px;font-size:26px;font-weight:400;text-align:left;vertical-align:bottom;border-bottom:1.5px solid #9b8567}
+.lab-comparison .ten-lab-table td{height:48px;padding:0 28px;border-bottom:1px solid #a8906d32;vertical-align:middle}
+.lab-comparison .ten-lab-table td:first-child,.lab-comparison .ten-lab-table th:first-child{padding-left:0}
+.lab-comparison .ten-lab-table td:nth-child(2),.lab-comparison .ten-lab-table th:nth-child(2),.lab-comparison .ten-lab-table td:nth-child(3),.lab-comparison .ten-lab-table th:nth-child(3){text-align:right;font-variant-numeric:tabular-nums}
+.lab-comparison .ten-lab-table td:last-child,.lab-comparison .ten-lab-table th:last-child{text-align:center;background:#b3925a23}
+.lab-comparison .ten-lab-table td:last-child{font-size:30px;font-style:italic}
+.lab-comparison .ten-lab-table tr[data-lab="A"] td:nth-child(3){font-size:24px;font-style:italic}
+.lab-comparison .comparison-key{position:absolute;left:120px;right:120px;top:781px;font:20px/1.3 Baskerville,Georgia,serif;color:#796750;margin:0}
+.lab-comparison .source{font-size:14px}
+
+.reporting-advisory p{margin:10px 15px 12px;font:26px/1.14 Baskerville,Georgia,serif}.reporting-advisory em{font-weight:600}
+.lab-comparison .ten-lab-table tr[data-lab="A"] td{height:65px}
+.lab-comparison .ten-lab-table tr[data-lab="A"] td:last-child{font-size:22px;line-height:1.15;padding:5px 22px}

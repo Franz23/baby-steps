@@ -1,0 +1,13 @@
+/* Scoped closing study; no runtime dependencies or motion. */
+.conclusion-study .conclusion-art{position:absolute;left:485px;top:-47px;width:1400px;height:788px;object-fit:cover;mix-blend-mode:multiply;pointer-events:none;mask-image:linear-gradient(90deg,transparent,#000 18%,#000 91%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 18%,#000 91%,transparent)}
+.conclusion-study .conclusion-mission{position:absolute;left:120px;top:190px;width:840px;margin:0;font:400 94px/1.12 Baskerville,Georgia,serif;letter-spacing:-2.1px;color:#594737}
+.conclusion-study .conclusion-directions{position:absolute;left:120px;right:120px;top:673px;display:grid;grid-template-columns:1fr 1fr 1fr;column-gap:52px}
+.conclusion-study .conclusion-directions p{margin:0;font:400 34px/1.2 Baskerville,Georgia,serif;letter-spacing:-.4px;color:#594737}
+.conclusion-study .conclusion-directions small{display:block;margin-top:12px;font:italic 23px/1.35 Baskerville,Georgia,serif;letter-spacing:0;color:#796750}
+.conclusion-study .source{left:120px;right:120px}
+
+/* Original embryo returns to close the presentation. */
+.conclusion-study .conclusion-art{left:350px;top:40px;width:1600px;height:900px}
+
+/* Feather only the embryo study into the shared paper; avoid multiplying two paper backgrounds. */
+.conclusion-study .conclusion-art{mix-blend-mode:normal;mask-image:radial-gradient(ellipse 290px 270px at 50% 39%,#000 62%,transparent 100%);-webkit-mask-image:radial-gradient(ellipse 290px 270px at 50% 39%,#000 62%,transparent 100%)}

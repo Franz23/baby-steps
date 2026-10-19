@@ -1,0 +1,33 @@
+/* Two speaker-controlled immune-study scenes; geometry is native 1600 × 900. */
+.immune-heading{position:absolute;top:66px;left:120px;right:110px;margin:0;font:400 53px/1.12 Baskerville,Georgia,serif;letter-spacing:-.75px;color:#594737;z-index:2}
+.immune-tissue-art{position:absolute;inset:0;width:1600px;height:900px;object-fit:cover}
+.immune-overlay,.immune-comparison{position:absolute;inset:0;width:1600px;height:900px}
+.immune-overlay text,.immune-comparison text{font-family:Baskerville,Georgia,serif;fill:#594737}
+.anatomy-leaders path{fill:none;stroke:#796750;stroke-width:1.4}
+.anatomy-labels text{font-size:29px;paint-order:stroke;stroke:#f4ecd9;stroke-width:7px;stroke-linejoin:round}
+.proposed-signal{opacity:0;transition:opacity .25s ease}
+.proposed-signal path{fill:none;stroke:#aa483d;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.proposed-signal .signal-path{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1s ease}
+.signal-question{font-size:54px;font-style:italic;fill:#aa483d!important;paint-order:stroke;stroke:#f4ecd9;stroke-width:6px}
+.signal-head{opacity:0;transition:opacity .3s .7s}
+.signal-revealed .proposed-signal{opacity:.9}.signal-revealed .signal-path{stroke-dashoffset:0}.signal-revealed .signal-head{opacity:1}
+.immune-hypothesis .source{background:#f4ecd9eb;padding:5px 8px;left:100px;right:100px}
+.replication-size{position:absolute;top:128px;left:120px;margin:0;font:italic 31px/1.3 Baskerville,Georgia,serif;color:#887258}
+.immune-comparison .measure{font-size:25px;fill:#887258}.immune-comparison .column-label{font-size:31px}.immune-comparison .signal-name{font-size:33px}.immune-comparison .score{font-size:31px;font-variant-numeric:tabular-nums}.zero-line{stroke:#a99272;stroke-width:1.1;opacity:.55}.original-stem{stroke:#8d785d;stroke-width:3;stroke-linecap:round}.original-dot{fill:#8d785d}.replication-stem{stroke:#aa483d;stroke-width:3;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset .8s ease}.replication-dot{fill:#aa483d}.immune-comparison .replication-score{fill:#aa483d}.zero-label{font-size:24px;fill:#887258!important}.nonsignificant{font-size:30px;font-style:italic;fill:#aa483d!important}
+.replication-ink,.after-replication{opacity:0;transition:opacity .4s ease}.after-replication{position:absolute;left:0;top:0}.before-replication{transition:opacity .3s ease}.replication-revealed .replication-ink,.replication-revealed .after-replication{opacity:1}.replication-revealed .before-replication{opacity:0}.replication-revealed .replication-stem{stroke-dashoffset:0}
+@media(prefers-reduced-motion:reduce){.proposed-signal,.signal-path,.signal-head,.replication-ink,.replication-stem,.before-replication,.after-replication{transition:none!important}}
+@media print{.proposed-signal,.signal-head,.replication-ink,.after-replication{opacity:1!important}.signal-path,.replication-stem{stroke-dashoffset:0!important}.before-replication{opacity:0!important}}
+
+/* Right-side tissue study: scoped to hypothesis scene only. */
+.immune-hypothesis .immune-heading{top:355px;left:120px;right:auto;max-width:510px;font-size:53px;line-height:1.16}
+.immune-hypothesis .anatomy-labels text{font-size:27px;stroke:#f4ecd9;stroke-width:6px}
+.immune-hypothesis .anatomy-leaders path{stroke-width:1.2;opacity:.7}
+.immune-hypothesis .proposed-signal .signal-path{stroke-dasharray:8 10;stroke-dashoffset:0;transition:none}
+.immune-hypothesis .proposed-signal path{stroke-width:2.4}
+.immune-hypothesis .source{background:transparent;padding:0;left:120px;right:100px}
+
+/* Rotate the original pencil study: epithelial surface runs top to bottom. */
+.immune-hypothesis .immune-tissue-art{transform-origin:0 0;transform:translate(650px,1600px) rotate(-90deg);mask-image:linear-gradient(to bottom,transparent 0%,#000 12%,#000 90%,transparent 100%)}
+
+.immune-hypothesis .immune-heading{font-size:68px;line-height:1.1;max-width:600px;top:340px}
+.immune-hypothesis .anatomy-labels text:first-child{font-size:34px}

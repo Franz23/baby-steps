@@ -1,0 +1,31 @@
+@import url('notebook-system.css');
+.workshop{padding-top:20px}.workshop-header{padding-bottom:16px;margin-bottom:22px}.controls{align-items:center}.controls select{max-width:250px}.workshop-foot{font:13px/1.5 Georgia,serif}.source[hidden]{display:none!important}
+.paper-cover .cover-title{top:45px;font-size:88px}.paper-cover .drawing{transform:translateY(125px) scale(1.5);transform-origin:50% 39%}.paper-cover .mission{top:770px;font-size:49px;line-height:1.2;color:#594737;letter-spacing:-.7px}
+.biopsy-study .result{position:absolute;left:1200px;font:400 51px/1.1 Baskerville,Georgia,serif;letter-spacing:-.7px}.result.euploid{top:228px}.result.mosaic{top:386px}.result.aneuploid{top:544px}.outcome-arrows,.age-chart,.bar-chart{position:absolute;inset:0;width:1600px;height:900px}.biopsy-study .source{background:#f5eddbcc;padding:4px 6px;left:84px;right:84px}
+.age-chart text,.bar-chart text{font-family:Baskerville,Georgia,serif;fill:#594737}.age-chart .chart-title{font-size:50px;letter-spacing:-.5px}.age-chart .tick{font-size:29px;fill:#796750}.axis-name{font-size:25px!important;font-style:italic;fill:#89755e!important}.gridline{stroke:#998365;stroke-width:1;opacity:.21}.overall-label{font-size:31px}.lab-label{font-size:29px}.lab-overlay{opacity:0;transition:opacity .6s ease;pointer-events:none}.lab-line{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.1s cubic-bezier(.2,.65,.25,1)}.lab-reveal.revealed .lab-overlay{opacity:1;pointer-events:auto}.lab-reveal.revealed .lab-line{stroke-dashoffset:0}.pooled{transition:opacity .5s ease}.revealed .pooled{opacity:.22}.revealed .overall-label{opacity:0}
+.lab-bars .bar-heading{position:absolute;top:77px;left:120px;right:100px;font:400 49px/1.15 Baskerville,Georgia,serif;letter-spacing:-.7px;margin:0}.bar-name,.bar-value{font-size:31px}.bar-tier{font-size:32px;font-style:italic}.unrated{position:absolute;top:750px;left:120px;right:100px;font:23px/1.4 Baskerville,Georgia,serif;color:#796750;margin:0}
+#viewport:fullscreen{width:100vw;height:100vh;background:#201d18;display:flex;align-items:center;justify-content:center}#viewport:fullscreen #canvas{position:relative;flex-shrink:0;transform-origin:center center}
+@media(prefers-reduced-motion:reduce){.lab-overlay,.lab-line,.pooled{transition:none}}
+@media(max-width:750px){.controls select{max-width:100%}.workshop-header span{display:none}}
+
+/* The biopsy crop holds the sample/branch junction at a fixed point. */
+.biopsy-study .biopsy-art{transform:scale(1.2);transform-origin:1020px 415px;animation:biopsy-settle 2.2s cubic-bezier(.2,.65,.25,1) both}
+.biopsy-study .outcome-arrows>g>path{stroke-dasharray:1;stroke-dashoffset:0;animation:biopsy-branch 1.1s .65s ease both}
+.biopsy-study .result{animation:biopsy-label .7s 1.2s ease both}
+@keyframes biopsy-settle{from{transform:scale(1.16)}to{transform:scale(1.2)}}
+@keyframes biopsy-branch{from{stroke-dashoffset:1;opacity:0}to{stroke-dashoffset:0;opacity:1}}
+@keyframes biopsy-label{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.biopsy-study .biopsy-art,.biopsy-study .outcome-arrows>g>path,.biopsy-study .result{animation:none}}
+@media print{.biopsy-study .biopsy-art,.biopsy-study .outcome-arrows>g>path,.biopsy-study .result{animation:none}}
+/* Presenter-triggered red pencil emphasis, one step before the next slide. */
+.mosaic-marker{position:absolute;inset:0;width:1600px;height:900px;pointer-events:none}
+.mosaic-marker path{fill:none;stroke:#aa4033;stroke-width:4.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;opacity:0;transition:stroke-dashoffset .8s cubic-bezier(.35,.1,.35,1),opacity .1s;mix-blend-mode:multiply}
+.mosaic-circled .mosaic-marker path{stroke-dashoffset:0;opacity:.9}
+.biopsy-study{cursor:pointer}
+@media(prefers-reduced-motion:reduce){.mosaic-marker path{transition:none}}
+/* Separate presentation beats: results first, then handwritten emphasis. */
+.biopsy-study .outcome-arrows>g>path,.biopsy-study .result{animation:none;opacity:0}
+.biopsy-study.results-revealed .outcome-arrows>g>path{animation:biopsy-branch .85s ease both}
+.biopsy-study.results-revealed .result{animation:biopsy-label .5s .35s ease both}
+.mosaic-marker path{stroke-width:4;stroke:#ac453b;transition:stroke-dashoffset .95s cubic-bezier(.22,.45,.35,1),opacity .1s}
+@media(prefers-reduced-motion:reduce){.biopsy-study.results-revealed .outcome-arrows>g>path,.biopsy-study.results-revealed .result{animation:none;opacity:1}.mosaic-marker path{transition:none}}

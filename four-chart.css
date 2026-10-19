@@ -1,0 +1,6 @@
+/* Keep the observed overall curve dominant when lab variation is revealed. */
+.lab-reveal .pooled,
+.lab-reveal.revealed .pooled { opacity: 1; }
+.lab-reveal .overall-label,
+.lab-reveal.revealed .overall-label { opacity: 1; font-size: 31px; font-weight: 600; }
+.lab-reveal .provider { opacity: .60; }

@@ -1,0 +1,8 @@
+
+.austin-test-bench .bench-heading{position:absolute;left:120px;top:105px;margin:0;font:400 65px/1.15 Baskerville,Georgia,serif;letter-spacing:-1px;color:#594737}
+.bench-workflow{position:absolute;left:120px;top:275px;width:485px;display:flex;flex-direction:column;gap:36px}
+.bench-workflow>div{display:flex;align-items:baseline;gap:24px}
+.workflow-number{flex:0 0 35px;font:italic 39px/1 Baskerville,Georgia,serif;color:#aa8160}
+.bench-workflow p{margin:0;font:400 34px/1.2 Baskerville,Georgia,serif;letter-spacing:-.4px;color:#594737}
+.bench-demo{position:absolute;left:645px;top:270px;width:855px;height:auto}
+.austin-test-bench .source{left:120px;right:120px}
