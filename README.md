@@ -27,3 +27,7 @@ Sources include published laboratory age tables, donated-embryo research and the
 Mosaic-call rates describe reporting behaviour, not laboratory quality or the probability of a healthy birth. Agreement with sampled inner cells is not proof of clinical safety. Immune signalling is inferred from RNA, and the replication does not establish a validated predictor of implantation outcomes.
 
 This is a research presentation, not medical advice or a clinically validated screening product.
+
+## Credits
+
+Franz Schrepf and the Baby Steps team. Embryo-screening test bench and original explorer demo by Austin. Research sources are credited in the slides and speaker notes.
